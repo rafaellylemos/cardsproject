@@ -1,3 +1,19 @@
+<app-card [planType]="'Simples'"
+[planPrice]="100"
+[cardStyle]="'orange'"/>
+
+<br />
+
+<app-card [planType]="'Completo'"
+[planPrice]="250"
+[cardStyle]="'purple'"/>
+
+<br />
+
+<app-card [planType]="'Intermediario'"
+[planPrice]="200"
+[cardStyle]="'blue'"/>
+
 <app-button [text]="'Adquirir'" [style]="'white'" [disabled]="true" (clicked)="buttonClicked()"/>
 
 <app-button [text]="'Adquirir'" [style]="'purple'"/>

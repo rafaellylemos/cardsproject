@@ -6,4 +6,10 @@
 }">
   <div class="card__plan card__item">Plano <b>{{ planType }}</b></div>
   <div class="card__price card__item">R$ {{ planPrice }},00/Mês</div>
+  <br />
+  <app-button 
+  [text]="'Adquirir'"
+  [style]="cardStyle === 'orange' ? 'white' : cardStyle === 'purple' ? 'purple' : 'green'"
+  />
+<!-- Se o cardStyle for igual a orange, entao o botão será white. Se não, se for igual a purple, o boão será purple, se não, será green -->
 </div>

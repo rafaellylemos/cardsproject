@@ -7,7 +7,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class ButtonComponent {
   @Input({ required: true, alias: 'text' }) buttonText: string = '';
-  @Input({ required: true, alias: 'style' }) buttonStyle: 'white' | 'purple' = 'white';
+  @Input({ required: true, alias: 'style' }) buttonStyle: 'white' | 'purple' | 'green'= 'white';
 
   @Input({ alias: 'disabled' })
   isDisabled: boolean = false;
