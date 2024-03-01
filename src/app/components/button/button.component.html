@@ -7,3 +7,5 @@
 (click)="onButtonClicked()"
 [disabled]="isDisabled"
 >{{ buttonText }}</button>
+
+<!-- Se eu tenho um button e quero fazer uma chamada HTTP para algum endpoint, não é legal implementar essa chamada no componente do card porque a lógica pras chamadas de cada componente podem ser diferentes e a ideia de reutilização dele se perde. Dai a ideia é que se faça a requisição através do componente pai app component. Nesse caso, a gente vai fazer tipo uma cascata: vai fazer a chamada pro card component e do card component pro app component.-->
