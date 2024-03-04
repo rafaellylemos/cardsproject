@@ -1,0 +1,14 @@
+.card2 {
+  max-width: 350px;
+  border-radius: 25px;
+  padding: 30px;
+  text-align: center;
+
+  &--bisque {
+    background-color: bisque;
+  }
+
+  &--aqua {
+    background-color: aquamarine;
+  }
+}
